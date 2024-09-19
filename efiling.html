@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFiling</title>
+    <link rel="stylesheet" href="efiling.css">
+</head>
+<body>
+    <header>
+        <h1>eFiling</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="case-tracking.html">Case Tracking</a>
+        <a href="legal-aid.html">Legal Aid</a>
+        <a href="efiling.html">eFiling</a>
+        <a href="traffic-fine-payments.html">Traffic Fine Payments</a>
+        <a href="ecourts-mobile-app.html">eCourts Mobile App</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="efiling-wrapper">
+            <form id="efilingForm">
+                <label for="caseType">Case Type:</label>
+                <select id="caseType" name="caseType">
+                    <option value="civil">Civil</option>
+                    <option value="criminal">Criminal</option>
+                    <option value="family">Family</option>
+                </select>
+                
+                <label for="caseDetails">Case Details:</label>
+                <input type="text" id="caseDetails" name="caseDetails">
+
+                <label for="fileUpload">Upload File:</label>
+                <input type="file" id="fileUpload" name="fileUpload">
+
+                <button type="button" id="submitForm">Submit</button>
+            </form>
+
+            <div id="submissionResult" class="result-display">
+                <h3>Submission Result</h3>
+                <p id="resultContent">Your submission result will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="efiling.js"></script>
+</body>
+</html>

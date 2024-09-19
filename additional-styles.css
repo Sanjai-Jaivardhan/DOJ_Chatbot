@@ -1,0 +1,42 @@
+/* Card Styling */
+.content-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Typewriter Effect for Entire Paragraphs */
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden; /* Hide overflow to maintain effect */
+    white-space: nowrap; /* Prevent wrapping */
+    border-right: 2px solid orange; /* Cursor effect */
+    font-family: monospace;
+    font-size: 1.2em; /* Adjust font size as needed */
+    width: 100%; /* Ensure the block takes up full width */
+    animation: typing 10s steps(50, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+
+/* Typewriter Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Caret Blinking Animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Optional Fade In Animation for Content Card */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Fine Payments</title>
+    <link rel="stylesheet" href="trafficstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Traffic Fine Payments</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="case-tracking.html">Case Tracking</a>
+        <a href="legal-aid.html">Legal Aid</a>
+        <a href="efiling.html">eFiling</a>
+        <a href="traffic-fine-payments.html">Traffic Fine Payments</a>
+        <a href="ecourts-mobile-app.html">eCourts Mobile App</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="traffic-fine-wrapper">
+            <form id="trafficFineForm">
+                <label for="ticketNumber">Ticket Number:</label>
+                <input type="text" id="ticketNumber" name="ticketNumber">
+                
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" name="vehicleNumber">
+                
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount">
+                
+                <button type="button" id="submitFine">Submit</button>
+            </form>
+
+            <div id="paymentResult" class="result-display">
+                <h3>Payment Result</h3>
+                <p id="resultContent">Your payment result will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="trafficscript.js"></script>
+</body>
+</html>

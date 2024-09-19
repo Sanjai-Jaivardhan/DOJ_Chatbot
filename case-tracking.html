@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Tracking</title>
+    <link rel="stylesheet" href="casestyles.css">
+</head>
+<body>
+    <header>
+        <h1>Case Tracking</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="case-tracking.html">Case Tracking</a>
+        <a href="legal-aid.html">Legal Aid</a>
+        <a href="efiling.html">eFiling</a>
+        <a href="traffic-fine-payments.html">Traffic Fine Payments</a>
+        <a href="ecourts-mobile-app.html">eCourts Mobile App</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="case-tracking-wrapper">
+            <!-- Animated Case Boxes -->
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <div class="case-box">
+                        <h2>Criminal Cases</h2>
+                        <p>Details about criminal cases.</p>
+                    </div>
+                    <div class="case-box">
+                        <h2>Civil Cases</h2>
+                        <p>Details about civil cases.</p>
+                    </div>
+                    <div class="case-box">
+                        <h2>Family Cases</h2>
+                        <p>Details about family cases.</p>
+                    </div>
+                    <div class="case-box">
+                        <h2>Corporate Cases</h2>
+                        <p>Details about corporate cases.</p>
+                    </div>
+                    <!-- Repeat boxes as needed -->
+                </div>
+            </div>
+
+            <!-- Form and Result Display -->
+            <div class="form-container">
+                <form id="caseTrackingForm">
+                    <label for="caseType">Case Type:</label>
+                    <select id="caseType" name="caseType">
+                        <option value="criminal">Criminal</option>
+                        <option value="civil">Civil</option>
+                        <option value="family">Family</option>
+                        <option value="corporate">Corporate</option>
+                    </select>
+
+                    <label for="caseNumber">Case Number:</label>
+                    <input type="text" id="caseNumber" name="caseNumber">
+
+                    <label for="caseStatus">Case Status:</label>
+                    <input type="text" id="caseStatus" name="caseStatus">
+
+                    <button type="button" id="submitCase">Submit</button>
+                </form>
+
+                <div id="caseResult" class="result-display">
+                    <h3>Case Details</h3>
+                    <p id="resultContent">Case details will be displayed here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-case.js"></script>
+</body>
+</html>
